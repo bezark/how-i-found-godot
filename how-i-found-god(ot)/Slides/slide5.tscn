@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://cns87bh11ugjr"]
+
+[ext_resource type="FontFile" uid="uid://b4tuiu67qgnop" path="res://Assets/COMIC.TTF" id="1_15oqy"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_d4mbu"]
+font = ExtResource("1_15oqy")
+font_size = 64
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_oiyrb"]
+font = ExtResource("1_15oqy")
+font_size = 64
+font_color = Color(1, 0.32549, 0.32549, 1)
+outline_size = 8
+outline_color = Color(0.300869, 0.794661, 1, 1)
+shadow_size = 10
+shadow_color = Color(0.0885599, 0.0885599, 0.0885599, 0.988235)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+text = "What type of games?"
+label_settings = SubResource("LabelSettings_d4mbu")
+
+[node name="Games" type="Label" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "all of the games!"
+label_settings = SubResource("LabelSettings_oiyrb")

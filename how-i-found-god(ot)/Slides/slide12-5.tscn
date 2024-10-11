@@ -1,0 +1,67 @@
+[gd_scene load_steps=5 format=3 uid="uid://b7gf0poqwtb1o"]
+
+[ext_resource type="FontFile" uid="uid://b4tuiu67qgnop" path="res://Assets/COMIC.TTF" id="1_b2vdv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_d4mbu"]
+font = ExtResource("1_b2vdv")
+font_size = 64
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ro26b"]
+font = ExtResource("1_b2vdv")
+font_size = 32
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_oiyrb"]
+font = ExtResource("1_b2vdv")
+font_size = 64
+font_color = Color(1, 0.32549, 0.32549, 1)
+outline_size = 8
+outline_color = Color(0.300869, 0.794661, 1, 1)
+shadow_size = 10
+shadow_color = Color(0.0885599, 0.0885599, 0.0885599, 0.988235)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+text = "wait why is that cool?"
+label_settings = SubResource("LabelSettings_d4mbu")
+
+[node name="Label2" type="Label" parent="ColorRect/VBoxContainer"]
+custom_minimum_size = Vector2(1150, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = " In the process of creating new structures and increasing complexity, one thing that a self-organizing system often generates is hierarchy. Corporate systems, military systems, ecological systems, economic systems, living organisms, are arranged in hierarchies. It is no accident that that is so. If subsystems can largely take care of themselves, regulate themselves, maintain themselves, and yet serve the needs of the larger system, while the larger system coordinates and enhances the functioning of the subsystems, a stable, resilient, and efficient structure results. It is hard to imagine how any other kind of arrangement could have come to be.
+"
+label_settings = SubResource("LabelSettings_ro26b")
+autowrap_mode = 3
+
+[node name="Games" type="Label" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "wow cool donella meadows quote"
+label_settings = SubResource("LabelSettings_oiyrb")

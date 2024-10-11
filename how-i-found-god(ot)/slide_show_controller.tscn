@@ -1,0 +1,37 @@
+[gd_scene load_steps=19 format=3 uid="uid://div22rgqg5sq"]
+
+[ext_resource type="Script" path="res://slide_show_controller.gd" id="1_77dlc"]
+[ext_resource type="PackedScene" uid="uid://djd1tkyi70gcp" path="res://Slides/slide1.tscn" id="2_860w2"]
+[ext_resource type="Texture2D" uid="uid://dioo4sdta8bxu" path="res://Assets/icon.svg" id="2_i3tj5"]
+[ext_resource type="PackedScene" uid="uid://cx2relvkpp0dp" path="res://Slides/slide2.tscn" id="3_xof4q"]
+[ext_resource type="PackedScene" uid="uid://cewj07ny4uakl" path="res://Slides/slide3.tscn" id="4_r2vrm"]
+[ext_resource type="PackedScene" uid="uid://1opdq5h2rt0w" path="res://Slides/slide4.tscn" id="5_mjata"]
+[ext_resource type="PackedScene" uid="uid://cns87bh11ugjr" path="res://Slides/slide5.tscn" id="6_bmoli"]
+[ext_resource type="PackedScene" uid="uid://baxtd0ed06jfe" path="res://Slides/slide6.tscn" id="7_nlngx"]
+[ext_resource type="PackedScene" uid="uid://cl6jch48v41f2" path="res://Slides/slide7.tscn" id="8_gmffy"]
+[ext_resource type="PackedScene" uid="uid://d0eqqclnr4315" path="res://Slides/slide8.tscn" id="9_h7300"]
+[ext_resource type="PackedScene" uid="uid://um402j7v2naq" path="res://Slides/slide9.tscn" id="10_l3004"]
+[ext_resource type="PackedScene" uid="uid://bfad4n1naf3p6" path="res://Slides/slide10.tscn" id="11_gnw5t"]
+[ext_resource type="PackedScene" uid="uid://b6a0l7xl16ot1" path="res://Slides/slide12.tscn" id="12_gcc52"]
+[ext_resource type="PackedScene" uid="uid://b7gf0poqwtb1o" path="res://Slides/slide12-5.tscn" id="13_bowfy"]
+[ext_resource type="PackedScene" uid="uid://bcfqh2t6f2nun" path="res://Slides/slide13.tscn" id="14_of75v"]
+[ext_resource type="PackedScene" uid="uid://3jcf1e8irn6s" path="res://Slides/slide14.tscn" id="15_jv0my"]
+[ext_resource type="PackedScene" uid="uid://kqrpk3vyodv" path="res://Slides/slide16.tscn" id="16_yvpio"]
+[ext_resource type="PackedScene" uid="uid://dd8ygklp2fcyt" path="res://Slides/slide17.tscn" id="17_nxacw"]
+
+[node name="SlideShowController" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_77dlc")
+slides = Array[PackedScene]([ExtResource("2_860w2"), ExtResource("3_xof4q"), ExtResource("4_r2vrm"), ExtResource("5_mjata"), ExtResource("6_bmoli"), ExtResource("7_nlngx"), ExtResource("8_gmffy"), ExtResource("9_h7300"), ExtResource("10_l3004"), ExtResource("11_gnw5t"), ExtResource("12_gcc52"), ExtResource("14_of75v"), ExtResource("13_bowfy"), ExtResource("15_jv0my"), ExtResource("16_yvpio"), ExtResource("17_nxacw")])
+
+[node name="Control" parent="." instance=ExtResource("2_860w2")]
+layout_mode = 1
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(590, 343)
+texture = ExtResource("2_i3tj5")
