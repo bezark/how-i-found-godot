@@ -11,12 +11,13 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var look_dir: Vector2
 @onready var camera = $Camera3D
 @export var camera_sensitivity = 50
-
+var spawn = null
 func _exit_tree():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
 
 func _ready() -> void:
+	spawn = position
 	mouse_captured = true
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
@@ -60,3 +61,7 @@ func rotate_camera(delta: float, sensitivity_modifier: float = 1.0):
 	rotation.y -= look_dir.x * camera_sensitivity* delta
 	camera.rotation.x = clamp(camera.rotation.x - look_dir.y *camera_sensitivity*sensitivity_modifier*delta, -1.5, 1.5)
 	look_dir = Vector2.ZERO
+
+
+func _on_area_3d_body_entered(body: Node3D) -> void:
+	position = spawn
