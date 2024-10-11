@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://clo24bucsi6ij"]
 
-[ext_resource type="PackedScene" uid="uid://cojgwvrjijkj0" path="res://firstpersonController/player.tscn" id="1_tuogc"]
+[ext_resource type="PackedScene" uid="uid://cojgwvrjijkj0" path="res://Assets/firstpersonController/player.tscn" id="1_tuogc"]
 [ext_resource type="FontFile" uid="uid://b4tuiu67qgnop" path="res://Assets/COMIC.TTF" id="1_wdo4y"]
 [ext_resource type="Texture2D" uid="uid://h7geqrm1joxm" path="res://Assets/tablet.jpg" id="2_75nx8"]
 [ext_resource type="Texture2D" uid="uid://b52tyjwrknpah" path="res://Assets/Pasted image (5).png" id="3_e3ywh"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://baxtd0ed06jfe"]
 
 [ext_resource type="FontFile" uid="uid://b4tuiu67qgnop" path="res://Assets/COMIC.TTF" id="1_r2bl0"]
-[ext_resource type="PackedScene" uid="uid://bi4vnytdmm0g2" path="res://Player/Player.tscn" id="2_3u4vb"]
+[ext_resource type="PackedScene" uid="uid://bi4vnytdmm0g2" path="res://Assets/Player/Player.tscn" id="2_3u4vb"]
 [ext_resource type="PackedScene" uid="uid://c3kbugirqm142" path="res://Assets/grass.tscn" id="3_3ogqb"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_d4mbu"]

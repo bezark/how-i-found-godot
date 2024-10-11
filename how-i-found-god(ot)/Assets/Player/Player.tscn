@@ -1,13 +1,13 @@
 [gd_scene load_steps=44 format=3 uid="uid://bi4vnytdmm0g2"]
 
-[ext_resource type="Script" path="res://Player/Player.gd" id="1_f2hxp"]
+[ext_resource type="Script" path="res://Assets/Player/Player.gd" id="1_f2hxp"]
 [ext_resource type="Texture2D" uid="uid://blucurgrfu56w" path="res://Assets/Main Characters/Desappearing (96x96).png" id="2_5tmfe"]
 [ext_resource type="Texture2D" uid="uid://dqtu6uhsuucqo" path="res://Assets/Main Characters/Ninja Frog/Fall (32x32).png" id="3_2nek7"]
 [ext_resource type="Texture2D" uid="uid://elhe17wqnbtv" path="res://Assets/Main Characters/Ninja Frog/Idle (32x32).png" id="4_iwqd8"]
 [ext_resource type="Texture2D" uid="uid://dkksl6k7n82at" path="res://Assets/Main Characters/Ninja Frog/Jump (32x32).png" id="5_jxwi6"]
 [ext_resource type="Texture2D" uid="uid://smn4r7nwcqu" path="res://Assets/Main Characters/Ninja Frog/Run (32x32).png" id="6_3gfsy"]
 [ext_resource type="Texture2D" uid="uid://dqlon1omwircu" path="res://Assets/Other/Dust Particle.png" id="7_sof5e"]
-[ext_resource type="AudioStream" uid="uid://bpyko2i13mj0v" path="res://Player/audio/sound_jump.wav" id="9_gadip"]
+[ext_resource type="AudioStream" uid="uid://bpyko2i13mj0v" path="res://Assets/Player/audio/sound_jump.wav" id="9_gadip"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nua6x"]
 radius = 11.0

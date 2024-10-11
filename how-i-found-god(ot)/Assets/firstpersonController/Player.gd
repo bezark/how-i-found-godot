@@ -12,6 +12,10 @@ var look_dir: Vector2
 @onready var camera = $Camera3D
 @export var camera_sensitivity = 50
 
+func _exit_tree():
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+
+
 func _ready() -> void:
 	mouse_captured = true
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)

@@ -1,0 +1,79 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0vqhw5l4qxw5"]
+
+[ext_resource type="FontFile" uid="uid://b4tuiu67qgnop" path="res://Assets/COMIC.TTF" id="1_17spk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_d4mbu"]
+font = ExtResource("1_17spk")
+font_size = 64
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_8fbre"]
+font = ExtResource("1_17spk")
+font_size = 32
+font_color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+text = "ok how can i learn godot?"
+label_settings = SubResource("LabelSettings_d4mbu")
+
+[node name="Label2" type="Label" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "teach it!"
+label_settings = SubResource("LabelSettings_8fbre")
+
+[node name="LinkButton" type="LinkButton" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 1, 1)
+theme_override_fonts/font = ExtResource("1_17spk")
+theme_override_font_sizes/font_size = 32
+text = "Look at the docs"
+uri = "https://docs.godotengine.org/en/stable/"
+
+[node name="LinkButton3" type="LinkButton" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 1, 1)
+theme_override_fonts/font = ExtResource("1_17spk")
+theme_override_font_sizes/font_size = 32
+text = "Look at the repo"
+uri = "https://github.com/godotengine/godot"
+
+[node name="LinkButton2" type="LinkButton" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 1, 1)
+theme_override_fonts/font = ExtResource("1_17spk")
+theme_override_font_sizes/font_size = 32
+text = "Book my office hours"
+uri = "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0-dx6a38wH0SLs6QL6JLl66zrytGLR9aXFW3hopvgWn1Om8EcAeAGMEfL2rAWPGnw2qQDLgxk8"
