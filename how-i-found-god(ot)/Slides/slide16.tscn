@@ -47,7 +47,7 @@ grow_vertical = 2
 
 [node name="Label" type="Label" parent="ColorRect/VBoxContainer"]
 layout_mode = 2
-text = "to all the educators in the house"
+text = "to all the educators in the house:"
 label_settings = SubResource("LabelSettings_d4mbu")
 
 [node name="Label2" type="Label" parent="ColorRect/VBoxContainer"]
@@ -55,7 +55,7 @@ custom_minimum_size = Vector2(1150, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
-text = "as a teacher you have a moral obligation to teach kids how to use software that builds the world you want to see in the future. anytime you teach kids something because it's easy or sexy or marketable or popular, you are reinforcing and reifying a power structure that puts profit over people, grindset over mindset and some other third thing.
+text = "as a teacher you have a moral obligation to teach kids how to use software that builds the world you want to see in the future. anytime you teach kids something because it's easy or sexy or marketable or popular, you are reinforcing and reifying a power structure that puts profit over people, grindset over mindset and some other bad thing over good cool things.
 "
 label_settings = SubResource("LabelSettings_ro26b")
 horizontal_alignment = 1

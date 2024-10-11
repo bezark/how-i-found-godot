@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://d0eqqclnr4315"]
+[gd_scene load_steps=6 format=3 uid="uid://d0eqqclnr4315"]
 
 [ext_resource type="FontFile" uid="uid://b4tuiu67qgnop" path="res://Assets/COMIC.TTF" id="1_25qt4"]
 [ext_resource type="Texture2D" uid="uid://diiumfq1k5cdt" path="res://Assets/Pasted image (4).png" id="2_efpsh"]
+[ext_resource type="Script" path="res://Slides/timer.gd" id="3_eikcc"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_d4mbu"]
 font = ExtResource("1_25qt4")
@@ -43,6 +44,7 @@ text = "u can even do XR games"
 label_settings = SubResource("LabelSettings_d4mbu")
 
 [node name="TextureRect2" type="TextureRect" parent="ColorRect/VBoxContainer"]
+visible = false
 clip_contents = true
 custom_minimum_size = Vector2(600, 0)
 layout_mode = 2
@@ -51,6 +53,7 @@ size_flags_vertical = 6
 texture = ExtResource("2_efpsh")
 expand_mode = 5
 stretch_mode = 6
+script = ExtResource("3_eikcc")
 
 [node name="Label2" type="Label" parent="ColorRect/VBoxContainer"]
 layout_mode = 2
@@ -58,3 +61,10 @@ size_flags_horizontal = 4
 size_flags_vertical = 6
 text = "(i don't have a gimmick for that, just trust me)"
 label_settings = SubResource("LabelSettings_8fbre")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="ColorRect/VBoxContainer/TextureRect2" method="_on_timer_timeout"]
