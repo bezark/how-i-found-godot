@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://div22rgqg5sq"]
+[gd_scene load_steps=20 format=3 uid="uid://div22rgqg5sq"]
 
 [ext_resource type="Script" path="res://slide_show_controller.gd" id="1_77dlc"]
 [ext_resource type="PackedScene" uid="uid://djd1tkyi70gcp" path="res://Slides/slide1.tscn" id="2_860w2"]
@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://3jcf1e8irn6s" path="res://Slides/slide14.tscn" id="15_jv0my"]
 [ext_resource type="PackedScene" uid="uid://kqrpk3vyodv" path="res://Slides/slide16.tscn" id="16_yvpio"]
 [ext_resource type="PackedScene" uid="uid://dd8ygklp2fcyt" path="res://Slides/slide17.tscn" id="17_nxacw"]
+[ext_resource type="PackedScene" uid="uid://clo24bucsi6ij" path="res://Slides/godot_runs_anywhere.tscn" id="18_2vk3y"]
 
 [node name="SlideShowController" type="Control"]
 layout_mode = 3
@@ -27,7 +28,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_77dlc")
-slides = Array[PackedScene]([ExtResource("2_860w2"), ExtResource("3_xof4q"), ExtResource("4_r2vrm"), ExtResource("5_mjata"), ExtResource("6_bmoli"), ExtResource("7_nlngx"), ExtResource("8_gmffy"), ExtResource("9_h7300"), ExtResource("10_l3004"), ExtResource("11_gnw5t"), ExtResource("12_gcc52"), ExtResource("14_of75v"), ExtResource("13_bowfy"), ExtResource("15_jv0my"), ExtResource("16_yvpio"), ExtResource("17_nxacw")])
+slides = Array[PackedScene]([ExtResource("2_860w2"), ExtResource("3_xof4q"), ExtResource("4_r2vrm"), ExtResource("5_mjata"), ExtResource("6_bmoli"), ExtResource("7_nlngx"), ExtResource("8_gmffy"), ExtResource("9_h7300"), ExtResource("10_l3004"), ExtResource("18_2vk3y"), ExtResource("11_gnw5t"), ExtResource("12_gcc52"), ExtResource("14_of75v"), ExtResource("13_bowfy"), ExtResource("15_jv0my"), ExtResource("16_yvpio"), ExtResource("17_nxacw")])
 
 [node name="Control" parent="." instance=ExtResource("2_860w2")]
 layout_mode = 1

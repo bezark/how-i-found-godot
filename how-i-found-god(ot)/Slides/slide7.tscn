@@ -25,11 +25,11 @@ albedo_texture = ExtResource("1_sylyc")
 material = SubResource("StandardMaterial3D_squ5k")
 size = Vector2(1.152, 0.648)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rr2rb"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_00rnb"]
 albedo_color = Color(1, 0.356863, 0.180392, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_kjl0t"]
-material = SubResource("StandardMaterial3D_rr2rb")
+material = SubResource("StandardMaterial3D_00rnb")
 text = "u can make 3D games too"
 font = ExtResource("1_sitwh")
 

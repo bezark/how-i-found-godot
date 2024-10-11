@@ -11,10 +11,10 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("ui_select"):
+	if Input.is_action_just_pressed("ui_right"):
 		current_slide += 1
 		load_slide(current_slide)
-	if Input.is_action_just_pressed("back"):
+	if Input.is_action_just_pressed("ui_left"):
 		current_slide -= 1
 		load_slide(current_slide)
 
